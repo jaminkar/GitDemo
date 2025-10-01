@@ -21,8 +21,8 @@ public class actions {
 		a.moveToElement(driver.findElement(By.xpath("(//a[@class='nav-a nav-a-2   nav-progressive-attribute'])[1]"))).build().perform();
 		driver.manage().window().maximize();
 		a.moveToElement(driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"))).click().keyDown(Keys.SHIFT).sendKeys("hello").doubleClick().build().perform();
-		
-		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.findElement(By.id("username")).sendKeys("sanqaeshqa@yt-google.com");
 		
 		/*
 		 * driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
