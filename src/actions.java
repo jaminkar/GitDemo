@@ -23,7 +23,7 @@ public class actions {
 		a.moveToElement(driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"))).click().keyDown(Keys.SHIFT).sendKeys("hello").doubleClick().build().perform();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		/*
 		 * driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
